@@ -39,8 +39,3 @@ class PepParsePipeline:
                 summarywriter.writerow([status, amount])
             summarywriter.writerow(['Total',
                                     sum(self.amount_statuses.values())])
-        # with open(file_path, mode='w', encoding='utf-8') as f:
-        #     f.write('Статус,Количество\n')
-        #     for status, amount in sorted(self.amount_statuses.items()):
-        #         f.write(f'{status},{amount}\n')
-        #     f.write(f'Total,{sum(self.amount_statuses.values())}')
